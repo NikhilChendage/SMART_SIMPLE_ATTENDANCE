@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Attendance"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:background="#FFFFFF"
+        android:paddingTop="10dp" />
+
+    <!-- Session Info Banner -->
+    <TextView
+        android:id="@+id/txtSessionInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E3F2FD"
+        android:padding="12dp"
+        android:text="Session Info: Loading..."
+        android:textColor="#0D47A1"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <!-- Counts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/txtPresent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Present\n0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#16803C"
+            android:background="#E8F5E9" />
+
+        <TextView
+            android:id="@+id/txtAbsent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Absent\n0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:background="#FFEBEE" />
+
+        <TextView
+            android:id="@+id/txtNotMarked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:text="Not Marked\n0"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#555555"
+            android:background="#EEEEEE" />
+
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="6dp">
+
+        <Button
+            android:id="@+id/btnMarkAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Mark All Present"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="Reset All"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <!-- Export & Share Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="8dp"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btnExportExcel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="3dp"
+            android:backgroundTint="#059669"
+            android:text="Excel (.csv)"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSharePdf"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="3dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Share PDF"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnShareWhatsappText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#2563EB"
+            android:text="WhatsApp"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+    <!-- Assigned Students Grid (Squares showing only Roll Number) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="5"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="false" />
+
+    </ScrollView>
+
+</LinearLayout>

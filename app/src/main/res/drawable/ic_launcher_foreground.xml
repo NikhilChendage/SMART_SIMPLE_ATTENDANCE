@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Graduation Cap Top Diamond -->
+    <path
+        android:fillColor="#0F172A"
+        android:pathData="M54,22 L86,33 L54,44 L22,33 Z" />
+
+    <!-- Cap Base Skullcap -->
+    <path
+        android:fillColor="#1E293B"
+        android:pathData="M38,38.5 L38,47 C38,52 70,52 70,47 L70,38.5 Z" />
+
+    <!-- Cap Tassel Cord & Hanging Ornament -->
+    <path
+        android:fillColor="#0284C7"
+        android:pathData="M80,31 L88,46 L85,46 Z" />
+    <path
+        android:fillColor="#0284C7"
+        android:pathData="M88,46 A3,3 0 1,1 88,52 A3,3 0 1,1 88,46" />
+
+    <!-- Clipboard Card Base Background -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,42 h40 a4,4 0 0,1 4,4 v42 a4,4 0 0,1 -4,4 h-40 a4,4 0 0,1 -4,-4 v-42 a4,4 0 0,1 4,-4 Z" />
+
+    <!-- Clipboard Top Header Clip -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M44,38 h20 a2,2 0 0,1 2,2 v5 a2,2 0 0,1 -2,2 h-20 a2,2 0 0,1 -2,-2 v-5 a2,2 0 0,1 2,-2 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,40.5 A2,2 0 1,1 54,44.5 A2,2 0 1,1 54,40.5" />
+
+    <!-- Attendance Row 1 -->
+    <!-- Avatar 1 -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M39,52 A2.5,2.5 0 1,1 39,57 A2.5,2.5 0 1,1 39,52 M35,61.5 C35,58.5 43,58.5 43,61.5 Z" />
+    <!-- Text Line 1 -->
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M46,55 h16 v2.5 h-16 Z" />
+    <!-- Check Box 1 -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M65,51 h6 a1.5,1.5 0 0,1 1.5,1.5 v6 a1.5,1.5 0 0,1 -1.5,1.5 h-6 a1.5,1.5 0 0,1 -1.5,-1.5 v-6 a1.5,1.5 0 0,1 1.5,-1.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66.5,55 L68,57 L70.5,53.5"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFF" />
+
+    <!-- Attendance Row 2 -->
+    <!-- Avatar 2 -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M39,64 A2.5,2.5 0 1,1 39,69 A2.5,2.5 0 1,1 39,64 M35,73.5 C35,70.5 43,70.5 43,73.5 Z" />
+    <!-- Text Line 2 -->
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M46,67 h16 v2.5 h-16 Z" />
+    <!-- Check Box 2 -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M65,63 h6 a1.5,1.5 0 0,1 1.5,1.5 v6 a1.5,1.5 0 0,1 -1.5,1.5 h-6 a1.5,1.5 0 0,1 -1.5,-1.5 v-6 a1.5,1.5 0 0,1 1.5,-1.5 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66.5,67 L68,69 L70.5,65.5"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFF" />
+
+    <!-- Attendance Row 3 -->
+    <!-- Avatar 3 -->
+    <path
+        android:fillColor="#1E3A8A"
+        android:pathData="M39,76 A2.5,2.5 0 1,1 39,81 A2.5,2.5 0 1,1 39,76 M35,85.5 C35,82.5 43,82.5 43,85.5 Z" />
+    <!-- Text Line 3 -->
+    <path
+        android:fillColor="#CBD5E1"
+        android:pathData="M46,79 h16 v2.5 h-16 Z" />
+    <!-- Box 3 -->
+    <path
+        android:fillColor="#E2E8F0"
+        android:pathData="M65,75 h6 a1.5,1.5 0 0,1 1.5,1.5 v6 a1.5,1.5 0 0,1 -1.5,1.5 h-6 a1.5,1.5 0 0,1 -1.5,-1.5 v-6 a1.5,1.5 0 0,1 1.5,-1.5 Z" />
+
+    <!-- Front Green Verified Check Badge -->
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M80,72 A11,11 0 1,1 80,94 A11,11 0 1,1 80,72" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M74.5,83 L78.5,87 L85.5,79"
+        android:strokeWidth="2.8"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+</vector>

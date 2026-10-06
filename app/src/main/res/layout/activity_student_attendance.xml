@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <!-- Header Banner -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:elevation="4dp">
+
+        <TextView
+            android:id="@+id/txtStudentNameHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Attendance"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtStudentSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Roll No: -"
+            android:textColor="#E0E0E0"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- Overall vs Subject Filter Tabs -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:scrollbars="none"
+        android:elevation="2dp"
+        android:paddingVertical="12dp">
+
+        <LinearLayout
+            android:id="@+id/subjectTabsContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:id="@+id/tabOverall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overall"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:paddingEnd="24dp" />
+
+            <TextView
+                android:id="@+id/tabSub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Computer Science 101"
+                android:textColor="#757575"
+                android:paddingEnd="24dp" />
+
+            <TextView
+                android:id="@+id/tabSub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Structures"
+                android:textColor="#757575"
+                android:paddingEnd="24dp" />
+
+            <TextView
+                android:id="@+id/tabSub3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Database Systems"
+                android:textColor="#757575"
+                android:paddingEnd="24dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Stats Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/statTotal"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Total Classes\n0"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:background="#FFFFFF"
+            android:elevation="2dp"
+            android:layout_marginEnd="6dp" />
+
+        <TextView
+            android:id="@+id/statPresent"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Present\n0"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#16803C"
+            android:background="#E8F5E9"
+            android:elevation="2dp"
+            android:layout_marginHorizontal="3dp" />
+
+        <TextView
+            android:id="@+id/statPercentage"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Attendance\n0%"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#1976D2"
+            android:background="#E3F2FD"
+            android:elevation="2dp"
+            android:layout_marginStart="6dp" />
+    </LinearLayout>
+
+    <!-- Breakdown List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/attendanceListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</LinearLayout>
